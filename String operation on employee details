@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+
+struct Employee {
+    int id;
+    char name[20];
+};
+
+int main() {
+    struct Employee emp = {1, "John"};
+    printf("Name length: %lu\n", strlen(emp.name));
+    char newName[20] = "Alice";
+    strcpy(emp.name, newName);
+    printf("Updated Name: %s\n", emp.name);
+    return 0;
+}
