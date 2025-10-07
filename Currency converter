@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main() {
+    int choice;
+    float amount;
+    printf("1. INR to USD\n2. USD to INR\nEnter choice: ");
+    scanf("%d", &choice);
+    printf("Enter amount: ");
+    scanf("%f", &amount);
+    if (choice == 1) printf("%.2f INR = %.2f USD\n", amount, amount / 83.0);
+    else if (choice == 2) printf("%.2f USD = %.2f INR\n", amount, amount * 83.0);
+    return 0;
+}
